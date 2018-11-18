@@ -18,18 +18,21 @@
     }
 
     .topbar {
-        /* The image used */
         background-image: url("assets/imgs/back.jpg");
 
-        /* Full height */
         height: 80%;
 
-        /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
     }
-    </style>
+    @media only screen and (max-width: 1025px) {
+      div.topbar {
+        background-size: contain;
+      }
+    }
+  </style>
   </head>
   <body>
 
@@ -134,17 +137,15 @@
       <hr style="color:white;padding-bottom:3.8%;">
     </div>
 
-      <div class="w3-metro-black col" style="padding-bottom:10px;">
-        <div class=" container col-sm-6 w3-metro-black col-dis" style="float:left;text-align:left;">
-          <ul class="foote">
+      <div class="w3-metro-black col" style="padding-bottom:10px;min-width:100%;">
+        <div class=" container col-sm-6 w3-metro-black col-dis">
+          <ul class="foote" style="float:left;text-align:left;">
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">The Team</a></li>
             <li><a href="#">Our Mission</a></li>
           </ul>
-        </div>
-        <div class=" container col-sm-6 w3-metro-black col-dis" style="float:right;color:#b4b4b4;">
-          <h1 class="w3-jumbo  w3-font" style="text-align:right;padding-right:2%;">CCExtractor<sup>&reg;</sup></h1>
+          <h1 class="w3-font" style="float:right;text-align:right;">CCExtractor<sup>&reg;</sup></h1>
         </div>
     </div>
     <div class="w3-metro-black  container" style="text-align:center;padding-top:5%;">
