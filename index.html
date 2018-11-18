@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCExtractor - Google Summer of Code</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-ico" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/master.css">
+    <style>
+    body, html {
+        height: 97%;
+        margin: 0;
+    }
+
+    .topbar {
+        /* The image used */
+        background-image: url("assets/imgs/back.jpg");
+
+        /* Full height */
+        height: 80%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+<!--
+        <div class="w3-bar w3-top w3-metro-blue w3-font">
+          <a href="#" class="w3-bar-item w3-button w3-hover-blue">CCExtractor</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue w3-right">Login</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue w3-right">Settings</a>
+          <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-blue w3-right">Home</a>
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <div id="demo" class="w3-bar-block w3-metro-blue w3-hide w3-hide-large w3-hide-medium">
+          <a href="#" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-blue">Settings</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-blue">Login</a>
+        </div> -->
+
+    <div class="container-fluid heading topbar w3-metro-blue w3-font" style="height:100%">
+      <div class="top" style="text-align:center;">
+        <h1 class="w3-jumbo w3-font"></h1>
+        <h3 class="w3-xxlarge w3-font"></h3>
+      </div>
+    </div>
+
+    <div class="container-fluid gutter">
+        <div class=" container w3-font card">
+          <div class=" w3-panel container">
+            <h1 class="  w3-font">Who We Are</h1>
+            <p>CCExtractor is a fast closed captions extractor for MPEG and H264 files. It supports DVD, HDTV transport streams, Replay TV. You can use this to create .srt (subtitles) files for your TV captures, have transcripts so you can edit subtitles, etc.</p>
+            <p>CCExtractor has been a part of Google Code-In and Google Summer of Code for many years. This is the official site for the students of <b>Google Summer of Code.</b></p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gutter">
+        <div class=" container w3-font card">
+          <div class=" w3-panel container">
+            <h1 class="  w3-font">Welcome</h1>
+              <p>This is CCExtractor's GSoC Wiki.</p>
+              <p>Red Hen has another document system (generic, not GSoC-specific), please ask Mark or Francis for access. It is fine to create Red Hen pages here (by anyone) if it's found to be more convenient.</p>
+              <p>About this wiki:
+              <ul>
+                <li><p>Anyone with access can edit existing pages and create new ones.</p></li>
+                <li><p>It is expected to contain all relevant information. If it's not here it doesn't exist :-)</p></li>
+                <li><p>It will eventually contain sensitive information (such as passwords), therefore make sure your own access credentials to the wiki are not shared with 3rd parties.</p></li>
+                <li><p>We use Dokuwiki. It's quite easy to use, but you should check out its documentation before you start editing.</p> </li>
+              </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gutter">
+        <div class=" container w3-font card">
+          <div class=" w3-panel container">
+            <h1 class="  w3-font">Public Pages</h1>
+            <p>This is a list of open pages that anyone can view for inspiration on what to do, and ideas for GSoC.</p>
+            <ul>
+              <li><a href="#">CCExtractor Bug Hunt</a></li>
+              <li><a href="#">CCExtractor tasks</a></li>
+              <li><a href="#">CCExtractor unassigned tasks</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid gutter" id="last">
+      <div class="container w3-font foote card">
+        <div class="w3-panel container w3-font">
+          <h1 class="w3-font">Project Reports</h1>
+          <h2>GSoC 2018</h2>
+          <ul>
+            <li><a href="#">Archit - FabBits</a></li>
+            <li><a href="#">Aaditya - Project Nephos</a></li>
+            <li><a href="#">Shivam Kumar Jha</a></li>
+            <li><a href="#">Saurabh Shrivastava - CCExtractor Web - A web application for subtitle extraction through CCExtractor.</a></li>
+            <li><a href="#">Satyam Mittal - The sample platform / Continuous integration</a></li>
+          </ul>
+
+          <h2>GSoC 2017</h2>
+          <ul>
+            <li><a href="#">Diptanshu - Python Extension Module (bindings) for CCExtractor</a></li>
+            <li><a href="#">Saurabh - CCAligner - Word by Word Audio Subtitle Synchronisation</a></li>
+            <li><a href="#">Satyam - Sample platform improvements (Windows testing)</a></li>
+          </ul>
+
+          <h2>GSoC 2016</h2>
+          <ul>
+            <li><a href="#">Willem - Sample platform iteration 2</a></li>
+            <li><a href="#">Abishek - Subtitle Extractor and CCExtractor improvements </a></li>
+            <li><a href="#">Abhinav - Extract hard-coded subtitles from video streams </a></li>
+            <li><a href="#">Shruti - News shot classification </a></li>
+            <li><a href="#">Rishabh - DVD Subtitle Extraction </a></li>
+            <li><a href="#">Ruslan - Real-time Repository and website </a></li>
+            <li><a href="#">Vasanth - Commercial detection </a></li>
+          </ul>
+
+          <h2>GSoc 2015</h2>
+          <ul>
+            <li><a href="#">Willem - Sample submission platform / CCExtractor improvements</a></li>
+            <li><a href="#">Nurendra - Sentiment Analysis / Realtime Translation with Google Translate/Apertium</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-metro-black">
+    <div class=" container w3-metro-black" style="text-align:center;padding-top:1%;">
+      <h1 class="w3-xxlarge w3-font" style="padding-bottom:1%;">Connect with Us</h1>
+      <span class="  fa fa-facebook icons" id="facebook"></span>
+      <span class="  fa fa-github icons" id="github"></span>
+      <span class="  fa fa-google-plus icons" id="gplus"></span>
+      <span class="  fa fa-instagram icons" id="ig"></span>
+      <span class="  fa fa-twitter icons" id="twitter"></span>
+      <span class="  fa fa-youtube-play icons" id="youtube"></span>
+      <span class="  fa fa-slack icons" id="slack"></span>
+      <hr style="color:white;padding-bottom:3.8%;">
+    </div>
+
+      <div class="w3-metro-black col" style="padding-bottom:10px;">
+        <div class=" container col-sm-6 w3-metro-black col-dis" style="float:left;text-align:left;">
+          <ul class="foote">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Our Mission</a></li>
+          </ul>
+        </div>
+        <div class=" container col-sm-6 w3-metro-black col-dis" style="float:right;color:#b4b4b4;">
+          <h1 class="w3-jumbo  w3-font" style="text-align:right;padding-right:2%;">CCExtractor<sup>&reg;</sup></h1>
+        </div>
+    </div>
+    <div class="w3-metro-black  container" style="text-align:center;padding-top:5%;">
+      <h5 class="  w3-font">Official site for the students participating in Google Summer of Code with CCExtractor Development.</h5>
+    </div>
+    <div class="w3-metro-black  container" style="text-align:center;padding-bottom:1%;">
+      <h5 class="  w3-font">&copy; Copyright CCExtractor.</h5>
+    </div>
+  </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        </script>
+  </body>
+</html>
