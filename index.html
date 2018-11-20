@@ -19,9 +19,7 @@
 
     .topbar {
         background-image: url("assets/imgs/back.png");
-
         height: 80%;
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -35,6 +33,23 @@
   </style>
   </head>
   <body>
+    <div class="overlay" id="navigationBar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavigation()">&times;</a>
+      <div class="content">
+        <a href="#wwa" onclick="closeNavigation()">Who We Are</a>
+        <a href="#wel" onclick="closeNavigation()">Welcome</a>
+        <a href="#pp" onclick="closeNavigation()">Public Pages</a>
+        <a href="#pr" onclick="closeNavigation()">Project Reports</a>
+      </div>
+    </div>
+
+    <div class="gutter">
+      <div class="w3-bar w3-top w3-font w3-metro-blue dis" id="openCmd">
+        <a href="#" class="w3-bar-item w3-button w3-hover-blue dis-col" style="text-align:left;">CCExtractor</a>
+        <span onclick="openNavigation()" class="w3-bar-item w3-button w3-right w3-hover-blue fa fa-bars dis-col" style="font-size:1.3em;text-align:right;"></span>
+      </div>
+    </div>
+
 
     <div class="container-fluid heading topbar w3-metro-blue w3-font" style="height:100%">
       <div class="top" style="text-align:center;">
@@ -44,7 +59,7 @@
     </div>
 
     <div class="container-fluid gutter">
-        <div class=" container w3-font card">
+        <div class=" container w3-font card" id="wwa">
           <div class=" w3-panel container">
             <h1 class="  w3-font">Who We Are</h1>
             <p>CCExtractor is a fast closed captions extractor for MPEG and H264 files. It supports DVD, HDTV transport streams, Replay TV. You can use this to create .srt (subtitles) files for your TV captures, have transcripts so you can edit subtitles, etc.</p>
@@ -54,7 +69,7 @@
     </div>
 
     <div class="container-fluid gutter">
-        <div class=" container w3-font card">
+        <div class=" container w3-font card" id="wel">
           <div class=" w3-panel container">
             <h1 class="  w3-font">Welcome</h1>
               <p>This is CCExtractor's GSoC Wiki.</p>
@@ -71,7 +86,7 @@
     </div>
 
     <div class="container-fluid gutter">
-        <div class=" container w3-font card">
+        <div class=" container w3-font card" id="pp">
           <div class=" w3-panel container">
             <h1 class="  w3-font">Public Pages</h1>
             <p>This is a list of open pages that anyone can view for inspiration on what to do, and ideas for GSoC.</p>
@@ -85,7 +100,7 @@
     </div>
 
     <div class="container-fluid gutter" id="last">
-      <div class="container w3-font foote card">
+      <div class="container w3-font foote card" id="pr">
         <div class="w3-panel container w3-font">
           <h1 class="w3-font">Project Reports</h1>
           <h2>GSoC 2018</h2>
@@ -164,6 +179,16 @@
             } else {
                 x.className = x.className.replace(" w3-show", "");
             }
+        }
+
+        function openNavigation(){
+          document.getElementById('navigationBar').style.width = "100%";
+          document.getElementById('openCmd').style.display = "none";
+        }
+
+        function closeNavigation(){
+          document.getElementById('navigationBar').style.width = "0%";
+          document.getElementById('openCmd').style.display = "flex";
         }
         </script>
   </body>
